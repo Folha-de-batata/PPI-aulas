@@ -65,6 +65,7 @@
         </form>
 
         <form action="https://google.com/search" method="get">
+            <label for="q">Pesquisar no Google:</label>
             <input type="text" name="q">
             <input type="submit">
         </form>
@@ -74,11 +75,43 @@
             <input id="usr" type="text" name="usuario">
 
             <label for="senha">Senha</label>
-            <input id="senha" type="password" name="senha">
+            <input id="senha" type="password" name="senha"> 
 
             <input type="submit">
         </form>
     </section>
+    <head>
+        <body>
+            <h1>Modelo em Caixa, Model Box HTML</h1>
+
+            <p>Os elementos html são estruturao em um modelo denominado modelbox, que refere-se 
+                a caracteristica de um elemento pode conter outross elementos, sendo que cada um possui uma 
+                estrutura interna, similar a ideia de uma caixa dentro da outra</p>
+            <h2>Estrutura de um elemento HTML</h2>
+            <p>Todos elementos HTML possuem conteúo, padding, borda, offset. Sendo a região de conteúo estruturada em três camadas 
+                1)background-color 
+                2) background-image 
+                3)content</p>
+
+            <img id="modelbox" src="https://hermes.dio.me/articles/cover/bc77d880-2cfa-4f01-81b5-012f08d572d3.png" alt="caixa">
+            
+            <style>
+                #divtexto{
+                    border: 3px solid rgba(200, 100, 220, 1);
+                    padding: 20px;  
+                    margin: 25px;
+                    outline: 1px solid red;
+                    outline-offset: 5px;
+                    background-color: yellow;
+                    background-image: url(https://pt.minecraft.wiki/images/thumb/Viniccius13_skin.png/150px-Viniccius13_skin.png?985e7);
+                    background-size: 6%;
+                }
+            </style>
+            <div id="divtexto">
+                texto
+            </div>
+        </body>
+    </head>
 
 </body>
 </html>
