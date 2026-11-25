@@ -1,25 +1,32 @@
-<h1><?php echo "Olá Mundo"; ?></h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Olá Mundo</title>
+</head>
+<body>
 
-<?php
-    $valor = 50;
-    echo "<p>".$valor."</p>";
-    echo "<p> $valor" </p>;
-    echo '<p> $valor </p>';
+    <h1><?php echo "Olá Mundo"; ?></h1>
 
+    <?php
+        $valor = 50;
+        echo $valor;
 
+        $nome = "João Marcelo";
+        echo $nome;
 
+        // Declarando um array
+        $array = ["pera", "maçã", "banana"];
 
-    $nome = "João Marcelo";
-    echo $nome;
+        // Exibindo os elementos do array em uma lista
+        echo "<ul>";
 
+        foreach ($array as $fruta) {
+            echo "<li>$fruta</li>";
+        }
 
-    $array=""; //declarando o array como string
-    $array = array(); //como array 
-    $array = ["pera", "maçã", "banana"]; 
-    echo "<br>";
-    print_r($array);
-    
+        echo "</ul>";
+    ?>
 
-
-    
-?>
+</body>
+</html>
