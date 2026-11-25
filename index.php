@@ -2,9 +2,8 @@
 
 <?php
     $valor = 50;
-    echo "<p>".$valor."</p>";
-    echo "<p> $valor" </p>;
-    echo '<p> $valor </p>';
+    echo $valor;
+
 
 
 
@@ -16,7 +15,7 @@
     $array=""; //declarando o array como string
     $array = array(); //como array 
     $array = ["pera", "maçã", "banana"]; 
-    echo "<br>";
+    echo "<ul>";
     print_r($array);
     
 
