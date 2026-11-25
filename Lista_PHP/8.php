@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Soma</title>
 </head>
 <body>
 
@@ -13,18 +13,15 @@
     <input type="submit" value="Somar">
 </form>
     <?php
-
         if(isset($_GET ["num"])){
             $num = explode(" ", $_GET["num"]);
             $soma = 0;
-            for($i = 0, $i < count($num), $i++){
+            for($i = 0; $i < count($num); $i++){
                 $soma = $soma + floatval($num[$i]);
             }
-            echo $soma;
+            echo $soma; 
         }
-        else{
-            echo "erro";
-        }
+       
     ?>
 </body>
 </html>
